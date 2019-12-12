@@ -7,14 +7,15 @@
 处理器：Intel(R) Xeon(R) CPU E3-1230 v5 @ 3.40GHz 3.40GHz
 系统类型： 64位操作系统
 ### 网关项目（独立）
-系统： CentOS7  
-Linux localhost.localdomain 4.15.15-1.el7.elrepo.x86_64 #1 SMP Sat Mar 31 16:41:40 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
-### 网关管理后台 （独立）
-系统： CentOS7  
-Linux localhost.localdomain 4.15.15-1.el7.elrepo.x86_64 #1 SMP Sat Mar 31 16:41:40 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
-### Sentinel（独立）
 系统：CentOS7  
 Linux localhost.localdomain 4.15.15-1.el7.elrepo.x86_64 #1 SMP Sat Mar 31 16:41:40 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                2
+### 网关管理后台 （独立）
+同上
+### Sentinel（独立）
+同上
 
 ## 前置
 #### soul-admin 
