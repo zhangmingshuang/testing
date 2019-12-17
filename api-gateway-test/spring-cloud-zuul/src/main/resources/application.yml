@@ -1,0 +1,25 @@
+server:
+  tomcat:
+    max-threads: 800
+    accept-count: 1000
+  port: 8904
+
+spring:
+  application:
+    name: springcloudzuul
+  cloud:
+    sentinel:
+      transport:
+        port: 18719
+        dashboard: 192.168.1.197:18091
+zuul:
+  routes:
+    path_route:
+      path: /web/**
+      url: http://192.168.1.215:8903/web
+  semaphore:
+    # Zuul use semaphore isolation by default.
+    max-semaphores: 5000
+  host:
+    max-total-connections: 1000
+    max-per-route-connections: 800

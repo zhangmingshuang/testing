@@ -3,6 +3,8 @@
 
 ## 测试环境
 ### soul测试项目 （独立）
+> 启动参数： -Xms2048m -Xmx2048m
+
 系统：windows7 旗舰版  
 处理器：Intel(R) Xeon(R) CPU E3-1230 v5 @ 3.40GHz 3.40GHz
 系统类型： 64位操作系统
@@ -45,6 +47,7 @@ java -jar soul-admin.jar \
 在测试之前所有链路经过较长时间的大高发压测，保证参数、JIT已经稳定。
 
 并添加了Tengine监控QPS。
+
 
 ### webbench-1.5
 #### 原路径请求

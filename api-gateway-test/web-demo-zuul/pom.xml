@@ -9,10 +9,10 @@
         <version>0.0.1</version>
     </parent>
 
-    <groupId>com.test.api.gateway.soul</groupId>
-    <artifactId>soul</artifactId>
+    <groupId>com.test.gateway.web.demo.zuul</groupId>
+    <artifactId>web-demo-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>soul</name>
+    <name>web-demo-zuul</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -21,35 +21,26 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.dromara</groupId>
-            <artifactId>soul-client-springmvc</artifactId>
-            <version>2.1.1-RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.2.0.RELEASE</version>
         </dependency>
 
-
-        <!-- Sentinel -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
             <version>2.1.0.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-transport-simple-http</artifactId>
             <version>1.6.3</version>
         </dependency>
-        <!-- nacos -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>0.9.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -71,4 +62,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

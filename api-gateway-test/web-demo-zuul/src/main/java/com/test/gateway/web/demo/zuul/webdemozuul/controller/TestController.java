@@ -1,4 +1,4 @@
-package com.test.web.webdemo.controller;
+package com.test.gateway.web.demo.zuul.webdemozuul.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.web.bind.annotation.RequestMapping;

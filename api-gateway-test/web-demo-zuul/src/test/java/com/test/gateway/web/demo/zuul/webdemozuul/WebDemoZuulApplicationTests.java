@@ -1,10 +1,10 @@
-package com.test.web.webdemo;
+package com.test.gateway.web.demo.zuul.webdemozuul;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebDemoApplicationTests {
+class WebDemoZuulApplicationTests {
 
     @Test
     void contextLoads() {

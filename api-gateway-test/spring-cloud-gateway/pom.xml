@@ -9,25 +9,35 @@
         <version>0.0.1</version>
     </parent>
 
-    <groupId>com.test.api.gateway.soul</groupId>
-    <artifactId>soul</artifactId>
+
+    <groupId>com.test.gateway.springcloudgateway</groupId>
+    <artifactId>spring-cloud-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>soul</name>
+    <name>spring-cloud-gateway</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.dromara</groupId>
-            <artifactId>soul-client-springmvc</artifactId>
-            <version>2.1.1-RELEASE</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+            <version>2.1.4.RELEASE</version>
         </dependency>
 
-
-        <!-- Sentinel -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-spring-cloud-gateway-adapter</artifactId>
+            <version>1.6.3</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
@@ -38,30 +48,19 @@
             <artifactId>sentinel-transport-simple-http</artifactId>
             <version>1.6.3</version>
         </dependency>
-        <!-- nacos -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>0.9.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
@@ -71,4 +70,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

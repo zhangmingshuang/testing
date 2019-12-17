@@ -1,0 +1,24 @@
+server:
+  tomcat:
+    max-threads: 800
+    accept-count: 1000
+  port: 8904
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        port: 18719
+        dashboard: 192.168.1.197:18091
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          lower-case-service-id: true
+      routes:
+        - id: path_route
+          uri: http://192.168.1.215:8903/web
+          predicates:
+            - Path=/web/**
+  application:
+    name: spring-cloud-gateway
