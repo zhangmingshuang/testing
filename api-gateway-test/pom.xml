@@ -26,7 +26,6 @@
         <module>spring-cloud-zuul</module>
         <!--support-->
         <module>web-demo</module>
-        <module>web-demo-zuul</module>
         <module>registry-eureka</module>
     </modules>
 

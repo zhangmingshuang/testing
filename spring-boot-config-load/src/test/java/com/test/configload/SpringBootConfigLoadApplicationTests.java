@@ -1,10 +1,10 @@
-package com.test.gateway.web.demo.zuul.webdemozuul;
+package com.test.configload;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebDemoZuulApplicationTests {
+class SpringBootConfigLoadApplicationTests {
 
     @Test
     void contextLoads() {
